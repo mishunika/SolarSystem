@@ -108,7 +108,9 @@ void init(void)
     // Load planet texture
 	planetTexture[0].LoadFromFile("texture/sun.jpg");
 	planetTexture[1].LoadFromFile("texture/mercury.jpg");
-	planetTexture[2].LoadFromFile("texture/earth.jpg");
+	planetTexture[2].LoadFromFile("texture/venus.jpg");
+	planetTexture[3].LoadFromFile("texture/earth.jpg");
+	planetTexture[4].LoadFromFile("texture/mars.jpg");
   
 	//glGenSamplers(1, &textureSampler);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
@@ -165,30 +167,48 @@ void render(void)
   prog.setUniform("Material.Ka", 0.15f, 0.15f, 0.15f);
   prog.setUniform("Material.Shininess", 1.0f);
   
+	//render sun in center
+  model = mat4(1.0f);
+	model*= glm::rotate(model, angle*5,0.0f,1.0f,0.0f);
+	model*= glm::scale(0.5f,0.5f,0.5f);
+  setMatrices();
+	glBindTexture(GL_TEXTURE_2D, planetTexture[0].GetTextureHandle());
+  sphere->render();
+  
 	//render mercury around earth
   model = mat4(1.0f);
-	model*=  glm::rotate(angle*20,1.0f,1.0f,0.0f);
-	model*=  glm::translate(-1.0f, 1.0f, 0.0f);
-	model*=  glm::scale(0.2f, 0.2f, 0.2f);
+	model*=  glm::rotate(angle*20,0.0f,1.0f,0.0f);
+	model*=  glm::translate(1.0f, 0.0f, 0.0f);
+	model*=  glm::scale(0.05f, 0.05f, 0.05f);
   setMatrices();
 	glBindTexture(GL_TEXTURE_2D, planetTexture[1].GetTextureHandle());
   sphere->render();
   
-	//render sun in center
+	//render venus around earth
   model = mat4(1.0f);
-	model*= glm::rotate(model, angle*5,0.0f,1.0f,0.0f);
-	model*= glm::scale(0.7f,0.7f,0.7f);
+	model*=  glm::rotate(angle*30,0.0f,1.0f,0.0f);
+	model*=  glm::translate(1.2f, 0.0f, 0.0f);
+	model*=  glm::scale(0.1f, 0.1f, 0.1f);
   setMatrices();
-	glBindTexture(GL_TEXTURE_2D, planetTexture[0].GetTextureHandle());
+	glBindTexture(GL_TEXTURE_2D, planetTexture[2].GetTextureHandle());
   sphere->render();
   
 	//render earth around sun
   model = mat4(1.0f);
 	model*=  glm::rotate(angle*40,0.0f,1.0f,0.0f);
-	model*=  glm::translate(-1.0f, 0.0f, 0.0f);
-	model*=  glm::scale(0.2f, 0.2f, 0.2f);
+	model*=  glm::translate(1.4f, 0.0f, 0.0f);
+	model*=  glm::scale(0.12f, 0.12f, 0.12f);
   setMatrices();
-	glBindTexture(GL_TEXTURE_2D, planetTexture[2].GetTextureHandle());
+	glBindTexture(GL_TEXTURE_2D, planetTexture[3].GetTextureHandle());
+  sphere->render();
+  
+	//render mars around sun
+  model = mat4(1.0f);
+	model*=  glm::rotate(angle*50,0.0f,1.0f,0.0f);
+	model*=  glm::translate(1.7f, 0.0f, 0.0f);
+	model*=  glm::scale(0.14f, 0.14f, 0.14f);
+  setMatrices();
+	glBindTexture(GL_TEXTURE_2D, planetTexture[4].GetTextureHandle());
   sphere->render();
 
 	glutSwapBuffers();
@@ -250,7 +270,7 @@ int main(int argc, char* argv[])
 	//GLUT INIT
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA | GLUT_DEPTH);
-	glutInitWindowSize(640,480);
+	glutInitWindowSize(800,600);
 	glutCreateWindow("Triangle Test");
 	glutDisplayFunc(render);
 	glutReshapeFunc(reshape);	
