@@ -11,6 +11,7 @@
 		9138759E174555D6008AE8BB /* venus.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9138759D174555D1008AE8BB /* venus.jpg */; };
 		913875A01745F8A0008AE8BB /* sphere_.obj in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9138759F1745F895008AE8BB /* sphere_.obj */; };
 		91635D38175683F00024AEEC /* cTimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 91635D35175683F00024AEEC /* cTimer.cpp */; };
+		91635D3A1756941B0024AEEC /* mars.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 91635D39175694150024AEEC /* mars.jpg */; };
 		9189DB5D1744B52100897E56 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9189DB5C1744B52100897E56 /* main.cpp */; };
 		9189DB5F1744B52100897E56 /* Planets.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9189DB5E1744B52100897E56 /* Planets.1 */; };
 		9189DB6E1744B55300897E56 /* drawable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9189DB661744B55300897E56 /* drawable.cpp */; };
@@ -91,6 +92,7 @@
 			dstPath = texture;
 			dstSubfolderSpec = 7;
 			files = (
+				91635D3A1756941B0024AEEC /* mars.jpg in CopyFiles */,
 				9138759E174555D6008AE8BB /* venus.jpg in CopyFiles */,
 				9138759C17455406008AE8BB /* sun.jpg in CopyFiles */,
 				9189DBF91744C83200897E56 /* earth.jpg in CopyFiles */,
@@ -107,6 +109,7 @@
 		91635D35175683F00024AEEC /* cTimer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cTimer.cpp; sourceTree = "<group>"; };
 		91635D36175683F00024AEEC /* cTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cTimer.h; sourceTree = "<group>"; };
 		91635D37175683F00024AEEC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		91635D39175694150024AEEC /* mars.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mars.jpg; sourceTree = "<group>"; };
 		9189DB591744B52100897E56 /* Planets */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Planets; sourceTree = BUILT_PRODUCTS_DIR; };
 		9189DB5C1744B52100897E56 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		9189DB5E1744B52100897E56 /* Planets.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Planets.1; sourceTree = "<group>"; };
@@ -418,6 +421,7 @@
 		9189DBF51744C82000897E56 /* texture */ = {
 			isa = PBXGroup;
 			children = (
+				91635D39175694150024AEEC /* mars.jpg */,
 				9138759D174555D1008AE8BB /* venus.jpg */,
 				9138759B174553F1008AE8BB /* sun.jpg */,
 				9189DBF61744C82000897E56 /* earth.jpg */,
