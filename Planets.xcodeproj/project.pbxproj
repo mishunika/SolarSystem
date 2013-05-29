@@ -10,6 +10,7 @@
 		9138759C17455406008AE8BB /* sun.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9138759B174553F1008AE8BB /* sun.jpg */; };
 		9138759E174555D6008AE8BB /* venus.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9138759D174555D1008AE8BB /* venus.jpg */; };
 		913875A01745F8A0008AE8BB /* sphere_.obj in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9138759F1745F895008AE8BB /* sphere_.obj */; };
+		91635D38175683F00024AEEC /* cTimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 91635D35175683F00024AEEC /* cTimer.cpp */; };
 		9189DB5D1744B52100897E56 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9189DB5C1744B52100897E56 /* main.cpp */; };
 		9189DB5F1744B52100897E56 /* Planets.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9189DB5E1744B52100897E56 /* Planets.1 */; };
 		9189DB6E1744B55300897E56 /* drawable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9189DB661744B55300897E56 /* drawable.cpp */; };
@@ -19,7 +20,6 @@
 		9189DB741744B59600897E56 /* cTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9189DB721744B59600897E56 /* cTexture.cpp */; };
 		9189DB761744B63D00897E56 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9189DB751744B63D00897E56 /* OpenGL.framework */; };
 		9189DB781744B64300897E56 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9189DB771744B64300897E56 /* GLUT.framework */; };
-		9189DB8E1744BC6000897E56 /* cTimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9189DB7C1744BC5F00897E56 /* cTimer.cpp */; };
 		9189DBCA1744BC8700897E56 /* makefile in Sources */ = {isa = PBXBuildFile; fileRef = 9189DBA31744BC8700897E56 /* makefile */; };
 		9189DBCB1744BC8700897E56 /* image_DXT.c in Sources */ = {isa = PBXBuildFile; fileRef = 9189DBB51744BC8700897E56 /* image_DXT.c */; };
 		9189DBCC1744BC8700897E56 /* image_helper.c in Sources */ = {isa = PBXBuildFile; fileRef = 9189DBB71744BC8700897E56 /* image_helper.c */; };
@@ -104,6 +104,9 @@
 		9138759B174553F1008AE8BB /* sun.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sun.jpg; sourceTree = "<group>"; };
 		9138759D174555D1008AE8BB /* venus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = venus.jpg; sourceTree = "<group>"; };
 		9138759F1745F895008AE8BB /* sphere_.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sphere_.obj; sourceTree = "<group>"; };
+		91635D35175683F00024AEEC /* cTimer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cTimer.cpp; sourceTree = "<group>"; };
+		91635D36175683F00024AEEC /* cTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cTimer.h; sourceTree = "<group>"; };
+		91635D37175683F00024AEEC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		9189DB591744B52100897E56 /* Planets */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Planets; sourceTree = BUILT_PRODUCTS_DIR; };
 		9189DB5C1744B52100897E56 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		9189DB5E1744B52100897E56 /* Planets.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Planets.1; sourceTree = "<group>"; };
@@ -120,9 +123,6 @@
 		9189DB731744B59600897E56 /* cTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cTexture.h; sourceTree = "<group>"; };
 		9189DB751744B63D00897E56 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		9189DB771744B64300897E56 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
-		9189DB7C1744BC5F00897E56 /* cTimer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cTimer.cpp; sourceTree = "<group>"; };
-		9189DB7D1744BC5F00897E56 /* cTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cTimer.h; sourceTree = "<group>"; };
-		9189DB7E1744BC5F00897E56 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		9189DB941744BC8700897E56 /* field_128_cube.dds */ = {isa = PBXFileReference; lastKnownFileType = file; path = field_128_cube.dds; sourceTree = "<group>"; };
 		9189DB951744BC8700897E56 /* img_cheryl.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img_cheryl.jpg; sourceTree = "<group>"; };
 		9189DB961744BC8700897E56 /* img_test.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = img_test.bmp; sourceTree = "<group>"; };
@@ -189,6 +189,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		91635D34175683EF0024AEEC /* cTimer */ = {
+			isa = PBXGroup;
+			children = (
+				91635D35175683F00024AEEC /* cTimer.cpp */,
+				91635D36175683F00024AEEC /* cTimer.h */,
+				91635D37175683F00024AEEC /* README.md */,
+			);
+			name = cTimer;
+			path = ../../cTimer;
+			sourceTree = "<group>";
+		};
 		9189DB501744B52100897E56 = {
 			isa = PBXGroup;
 			children = (
@@ -211,11 +222,11 @@
 		9189DB5B1744B52100897E56 /* Planets */ = {
 			isa = PBXGroup;
 			children = (
+				91635D34175683EF0024AEEC /* cTimer */,
 				9189DBF51744C82000897E56 /* texture */,
 				9189DBF21744C75400897E56 /* mesh */,
 				9189DBE21744C55400897E56 /* shader */,
 				9189DB931744BC8700897E56 /* soil */,
-				9189DB7B1744BC5F00897E56 /* cTimer */,
 				9189DB721744B59600897E56 /* cTexture.cpp */,
 				9189DB731744B59600897E56 /* cTexture.h */,
 				9189DB651744B55300897E56 /* defines.h */,
@@ -231,16 +242,6 @@
 				9189DB5E1744B52100897E56 /* Planets.1 */,
 			);
 			path = Planets;
-			sourceTree = "<group>";
-		};
-		9189DB7B1744BC5F00897E56 /* cTimer */ = {
-			isa = PBXGroup;
-			children = (
-				9189DB7C1744BC5F00897E56 /* cTimer.cpp */,
-				9189DB7D1744BC5F00897E56 /* cTimer.h */,
-				9189DB7E1744BC5F00897E56 /* README.md */,
-			);
-			path = cTimer;
 			sourceTree = "<group>";
 		};
 		9189DB931744BC8700897E56 /* soil */ = {
@@ -487,7 +488,6 @@
 				9189DB701744B55300897E56 /* glutils.cpp in Sources */,
 				9189DB711744B55300897E56 /* vbomesh.cpp in Sources */,
 				9189DB741744B59600897E56 /* cTexture.cpp in Sources */,
-				9189DB8E1744BC6000897E56 /* cTimer.cpp in Sources */,
 				9189DBCA1744BC8700897E56 /* makefile in Sources */,
 				9189DBCB1744BC8700897E56 /* image_DXT.c in Sources */,
 				9189DBCC1744BC8700897E56 /* image_helper.c in Sources */,
@@ -496,6 +496,7 @@
 				9189DBE91744C55400897E56 /* texture.vs in Sources */,
 				9189DBEA1744C55400897E56 /* texture.fs in Sources */,
 				9189DBEB1744C55400897E56 /* texture.vs in Sources */,
+				91635D38175683F00024AEEC /* cTimer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
