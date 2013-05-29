@@ -33,7 +33,7 @@ mat4 model;
 mat4 view;
 mat4 projection;
 float angle;
-cTimer fpsTimer;
+cTimer fpsTimer, translationTimer;
 int fpsCount=0;
 cTexture planetTexture[2];
 GLuint textureSampler;
@@ -106,9 +106,10 @@ void init(void)
     glActiveTexture(GL_TEXTURE0);
 
     // Load planet texture
-	planetTexture[0].LoadFromFile("texture/earth.jpg");
+	planetTexture[0].LoadFromFile("texture/sun.jpg");
 	planetTexture[1].LoadFromFile("texture/mercury.jpg");
-   
+	planetTexture[2].LoadFromFile("texture/earth.jpg");
+  
 	//glGenSamplers(1, &textureSampler);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
@@ -122,8 +123,13 @@ void init(void)
 
 void update(int)
 {
-	angle -= 0.003f;
-    glutTimerFunc(1,update,0);
+  //angle -= 0.003f;
+  
+  translationTimer.AdvanceTime();
+  angle -= translationTimer.GetElapsedTime() * 2;
+  translationTimer.Reset();
+
+  glutTimerFunc(1,update,0);
 	glutPostRedisplay();
 }
 
@@ -168,7 +174,7 @@ void render(void)
 	glBindTexture(GL_TEXTURE_2D, planetTexture[1].GetTextureHandle());
   sphere->render();
   
-	//render earth in center
+	//render sun in center
   model = mat4(1.0f);
 	model*= glm::rotate(model, angle*5,0.0f,1.0f,0.0f);
 	model*= glm::scale(0.7f,0.7f,0.7f);
@@ -176,13 +182,13 @@ void render(void)
 	glBindTexture(GL_TEXTURE_2D, planetTexture[0].GetTextureHandle());
   sphere->render();
   
-	//render mercury around earth
+	//render earth around sun
   model = mat4(1.0f);
-	model*=  glm::rotate(angle*40,1.0f,1.0f,0.0f);
-	model*=  glm::translate(-1.0f, 1.0f, 0.0f);
+	model*=  glm::rotate(angle*40,0.0f,1.0f,0.0f);
+	model*=  glm::translate(-1.0f, 0.0f, 0.0f);
 	model*=  glm::scale(0.2f, 0.2f, 0.2f);
   setMatrices();
-	glBindTexture(GL_TEXTURE_2D, planetTexture[1].GetTextureHandle());
+	glBindTexture(GL_TEXTURE_2D, planetTexture[2].GetTextureHandle());
   sphere->render();
 
 	glutSwapBuffers();
@@ -243,7 +249,7 @@ int main(int argc, char* argv[])
 {
 	//GLUT INIT
 	glutInit(&argc, argv);
-	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA);
+	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA | GLUT_DEPTH);
 	glutInitWindowSize(640,480);
 	glutCreateWindow("Triangle Test");
 	glutDisplayFunc(render);
