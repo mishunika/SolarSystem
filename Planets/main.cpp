@@ -103,33 +103,27 @@ void init(void)
   prog.setUniform("Light.Intensity", vec3(0.9f,0.9f,0.9f) );
 	
   glActiveTexture(GL_TEXTURE0);
+
+  // Initialize the planets.
+  Planets[0] = new Planet(0.8f, 0.0f, "texture/sun.jpg");
+  Planets[1] = new Planet(0.035f, 0.86f, "texture/mercury.jpg");
+  Planets[2] = new Planet(0.08f, 0.89f, "texture/venus.jpg");
+  Planets[3] = new Planet(0.092f, 0.90f, "texture/earth.jpg");
   
-  // Load planet texture
-	planetTexture[0].LoadFromFile("texture/sun.jpg");
-	planetTexture[1].LoadFromFile("texture/mercury.jpg");
-	planetTexture[2].LoadFromFile("texture/venus.jpg");
-	planetTexture[3].LoadFromFile("texture/earth.jpg");
-	planetTexture[4].LoadFromFile("texture/mars.jpg");
+  Planets[4] = new Planet(0.049f, 0.95f, "texture/mars.jpg");
+  Planets[5] = new Planet(0.3f, 1.3f, "texture/jupiter.jpg");
+  Planets[6] = new Planet(0.25f, 1.6f, "texture/saturn.jpg");
   
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+  Planets[7] = new Planet(0.14f, 1.9f, "texture/uranus.jpg");
+  Planets[8] = new Planet(0.13f, 2.1f, "texture/neptune.jpg");
+  Planets[9] = new Planet(0.018f, 2.3f, "texture/pluto.jpg");
+  
+  glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
   
   prog.setUniform("Tex1", 0);
-  
-  Planets[0] = new Planet(0.8f, 0.0f, "texture/sun.jpg");
-  Planets[1] = new Planet(0.035f, 0.86f, "texture/mercury.jpg");
-  Planets[2] = new Planet(0.088f, 0.89f, "texture/venus.jpg");
-  Planets[3] = new Planet(0.092f, 0.9f, "texture/earth.jpg");
-  
-  Planets[4] = new Planet(0.049f, 0.9f, "texture/mars.jpg");
-  Planets[5] = new Planet(0.3f, 1.3f, "texture/jupiter.jpg");
-  Planets[6] = new Planet(0.25f, 1.6f, "texture/saturn.jpg");
-  
-  Planets[7] = new Planet(0.14f, 2.0f, "texture/uranus.jpg");
-  Planets[8] = new Planet(0.13f, 2.3f, "texture/neptune.jpg");
-  Planets[9] = new Planet(0.018f, 2.4f, "texture/pluto.jpg");
 }
 
 void update(int)
@@ -247,6 +241,15 @@ void reshape(int w, int h)
 }
 void keyboard (unsigned char key, int x, int y)
 {
+  //cout << key << " " << x << " " << y;
+  switch (key) {
+    case 'w':
+      cout << "ae";
+      break;
+      
+    default:
+      break;
+  }
 	glutPostRedisplay ();
 }
 
