@@ -3,7 +3,7 @@
 varying vec3 Position;
 varying vec3 Normal;
 varying vec2 TexCoord;
-
+uniform bool Sun;
 uniform sampler2D Tex1;
 
 struct LightInfo {
@@ -38,5 +38,12 @@ void main() {
     vec3 ambAndDiff, spec;
     vec4 texColor = texture2D( Tex1, TexCoord );
     phongModel( Position, Normal, ambAndDiff, spec );
-    gl_FragColor = (vec4( ambAndDiff, 1.0 ) * texColor) + vec4(spec,1.0);
+    if(Sun)
+    {
+      gl_FragColor = texColor;
+    }
+    else
+    {
+      gl_FragColor = (vec4( ambAndDiff, 1.0 ) * texColor) + vec4(spec,1.0);
+    }
 }
