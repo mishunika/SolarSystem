@@ -18,6 +18,7 @@
 #include "../../glm/glm.hpp"
 #include "../../glm/gtc/matrix_transform.hpp"
 #include "../../glm/gtx/transform2.hpp"
+#include "Planet.h"
 using glm::mat4;
 using glm::vec3;
 using namespace std;
@@ -35,8 +36,8 @@ mat4 projection;
 float angle;
 cTimer fpsTimer, translationTimer;
 int fpsCount=0;
-cTexture planetTexture[2];
-GLuint textureSampler;
+cTexture planetTexture[5];
+Planet *Planets[10];
 
 void init(void)
 {
@@ -95,7 +96,7 @@ void init(void)
   glCullFace(GL_BACK);
   sphere = new VBOMesh("mesh/sphere.obj");
 	
-  view = glm::lookAt(vec3(-1.0f,0.25f,2.0f), vec3(0.0f,0.0f,0.0f), vec3(0.0f,1.0f,0.0f));
+  view = glm::lookAt(vec3(-1.5f,0.25f,2.0f), vec3(0.0f,0.0f,0.0f), vec3(0.0f,1.0f,0.0f));
   projection = mat4(1.0f);
   angle = (float)( TO_RADIANS(100.0) );
   
@@ -110,20 +111,29 @@ void init(void)
 	planetTexture[3].LoadFromFile("texture/earth.jpg");
 	planetTexture[4].LoadFromFile("texture/mars.jpg");
   
-	//glGenSamplers(1, &textureSampler);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-	//glBindSampler(0, textureSampler);
   
   prog.setUniform("Tex1", 0);
+  
+  Planets[0] = new Planet(0.8f, 0.0f, "texture/sun.jpg");
+  Planets[1] = new Planet(0.035f, 0.86f, "texture/mercury.jpg");
+  Planets[2] = new Planet(0.088f, 0.89f, "texture/venus.jpg");
+  Planets[3] = new Planet(0.092f, 0.9f, "texture/earth.jpg");
+  
+  Planets[4] = new Planet(0.049f, 0.9f, "texture/mars.jpg");
+  Planets[5] = new Planet(0.3f, 1.3f, "texture/jupiter.jpg");
+  Planets[6] = new Planet(0.25f, 1.6f, "texture/saturn.jpg");
+  
+  Planets[7] = new Planet(0.14f, 2.0f, "texture/uranus.jpg");
+  Planets[8] = new Planet(0.13f, 2.3f, "texture/neptune.jpg");
+  Planets[9] = new Planet(0.018f, 2.4f, "texture/pluto.jpg");
 }
 
 void update(int)
 {
-  //angle -= 0.03f;
-  
   translationTimer.AdvanceTime();
   angle -= translationTimer.GetElapsedTime() * 2;
   translationTimer.Reset();
@@ -165,21 +175,36 @@ void render(void)
   prog.setUniform("Material.Ka", 0.05f, 0.05f, 0.05f);        // Diffuse
   prog.setUniform("Material.Shininess", 1.0f);
   
+  //render sun in center
+  prog.setUniform("Sun", true);
+  model = Planets[0]->Update(angle);
+  setMatrices();
+	Planets[0]->Render();
+  prog.setUniform("Sun", false);
+  
+  for (int i = 1; i < 10; i++)
+  {
+    model = Planets[i]->Update(angle);
+    setMatrices();
+    Planets[i]->Render();
+  }
+
+  /*
 	//render sun in center
   prog.setUniform("Sun", true);
-  model = mat4(1.0f);
-	model*= glm::rotate(model, angle*5,0.0f,1.0f,0.0f);
-	model*= glm::scale(0.6f,0.6f,0.6f);
+  //model = mat4(1.0f);
+	//model*= glm::rotate(model, angle*5,0.0f,1.0f,0.0f);
+	//model*= glm::scale(0.6f,0.6f,0.6f);
+  model = Planets[0]->Update(angle);
   setMatrices();
-	glBindTexture(GL_TEXTURE_2D, planetTexture[0].GetTextureHandle());
-  sphere->render();
+	Planets[0]->Render();
   prog.setUniform("Sun", false);
   
 	//render mercury around earth
   model = mat4(1.0f);
 	model *=  glm::rotate(angle*20,0.0f,1.0f,0.0f);
-	model *=  glm::translate(1.0f, 0.0f, 0.0f);
-	model *=  glm::scale(0.05f, 0.05f, 0.05f);
+	model *=  glm::translate(0.86f, 0.0f, 0.0f);
+	model *=  glm::scale(0.035f, 0.035f, 0.035f);
   setMatrices();
 	glBindTexture(GL_TEXTURE_2D, planetTexture[1].GetTextureHandle());
   sphere->render();
@@ -205,11 +230,11 @@ void render(void)
 	//render mars around sun
   model = mat4(1.0f);
 	model*=  glm::rotate(angle*50,0.0f,1.0f,0.0f);
-	model*=  glm::translate(1.7f, 0.0f, 0.0f);
+	model*=  glm::translate(1.9f, 0.0f, 0.0f);
 	model*=  glm::scale(0.14f, 0.14f, 0.14f);
   setMatrices();
 	glBindTexture(GL_TEXTURE_2D, planetTexture[4].GetTextureHandle());
-  sphere->render();
+  sphere->render();*/
   
 	glutSwapBuffers();
 }
@@ -270,18 +295,13 @@ int main(int argc, char* argv[])
 	//GLUT INIT
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA | GLUT_DEPTH);
-	glutInitWindowSize(800,600);
-	glutCreateWindow("Triangle Test");
+	glutInitWindowSize(1280,755);
+	glutCreateWindow("Planets");
 	glutDisplayFunc(render);
 	glutReshapeFunc(reshape);
 	glutKeyboardFunc(keyboard);
 	glutTimerFunc(1,update,0);
   
-  
-  //GET GL VERSION
-  //GLint major,minor;
-  //glGetIntegerv(GL_MAJOR_VERSION,&major);
-  //glGetIntegerv(GL_MINOR_VERSION,&minor);
   cout << "GL VENDOR:" << glGetString(GL_VENDOR) << endl;
   cout << "GL RENDERER:" << glGetString(GL_RENDERER) << endl;
   cout << "GL VERSION(string):" << glGetString(GL_VERSION) << endl;

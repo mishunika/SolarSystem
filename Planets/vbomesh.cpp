@@ -22,8 +22,8 @@ VBOMesh::VBOMesh(const char * fileName, bool center)
 }
 
 void VBOMesh::render() const {
-    glBindVertexArrayAPPLE(vaoHandle);
-    glDrawElements(GL_TRIANGLES, 3 * faces, GL_UNSIGNED_INT, ((GLubyte *)NULL + (0)));
+  glBindVertexArrayAPPLE(vaoHandle);
+  glDrawElements(GL_TRIANGLES, 3 * faces, GL_UNSIGNED_INT, ((GLubyte *)NULL + (0)));
   glBindVertexArrayAPPLE(0);
 }
 
