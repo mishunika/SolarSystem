@@ -12,6 +12,12 @@
 		913875A01745F8A0008AE8BB /* sphere_.obj in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9138759F1745F895008AE8BB /* sphere_.obj */; };
 		91635D38175683F00024AEEC /* cTimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 91635D35175683F00024AEEC /* cTimer.cpp */; };
 		91635D3A1756941B0024AEEC /* mars.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 91635D39175694150024AEEC /* mars.jpg */; };
+		9183FAA21764D48E007E2DCA /* Planet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9183FAA01764D48E007E2DCA /* Planet.cpp */; };
+		9183FAA81764F755007E2DCA /* jupiter.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9183FAA31764F74A007E2DCA /* jupiter.jpg */; };
+		9183FAA91764F755007E2DCA /* neptune.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9183FAA41764F74A007E2DCA /* neptune.jpg */; };
+		9183FAAA1764F755007E2DCA /* pluto.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9183FAA51764F74A007E2DCA /* pluto.jpg */; };
+		9183FAAB1764F755007E2DCA /* saturn.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9183FAA61764F74A007E2DCA /* saturn.jpg */; };
+		9183FAAC1764F755007E2DCA /* uranus.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9183FAA71764F74A007E2DCA /* uranus.jpg */; };
 		9189DB5D1744B52100897E56 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9189DB5C1744B52100897E56 /* main.cpp */; };
 		9189DB5F1744B52100897E56 /* Planets.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9189DB5E1744B52100897E56 /* Planets.1 */; };
 		9189DB6E1744B55300897E56 /* drawable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9189DB661744B55300897E56 /* drawable.cpp */; };
@@ -92,6 +98,11 @@
 			dstPath = texture;
 			dstSubfolderSpec = 7;
 			files = (
+				9183FAA81764F755007E2DCA /* jupiter.jpg in CopyFiles */,
+				9183FAA91764F755007E2DCA /* neptune.jpg in CopyFiles */,
+				9183FAAA1764F755007E2DCA /* pluto.jpg in CopyFiles */,
+				9183FAAB1764F755007E2DCA /* saturn.jpg in CopyFiles */,
+				9183FAAC1764F755007E2DCA /* uranus.jpg in CopyFiles */,
 				91635D3A1756941B0024AEEC /* mars.jpg in CopyFiles */,
 				9138759E174555D6008AE8BB /* venus.jpg in CopyFiles */,
 				9138759C17455406008AE8BB /* sun.jpg in CopyFiles */,
@@ -110,6 +121,13 @@
 		91635D36175683F00024AEEC /* cTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cTimer.h; sourceTree = "<group>"; };
 		91635D37175683F00024AEEC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		91635D39175694150024AEEC /* mars.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mars.jpg; sourceTree = "<group>"; };
+		9183FAA01764D48E007E2DCA /* Planet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Planet.cpp; sourceTree = "<group>"; };
+		9183FAA11764D48E007E2DCA /* Planet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Planet.h; sourceTree = "<group>"; };
+		9183FAA31764F74A007E2DCA /* jupiter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jupiter.jpg; sourceTree = "<group>"; };
+		9183FAA41764F74A007E2DCA /* neptune.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = neptune.jpg; sourceTree = "<group>"; };
+		9183FAA51764F74A007E2DCA /* pluto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pluto.jpg; sourceTree = "<group>"; };
+		9183FAA61764F74A007E2DCA /* saturn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = saturn.jpg; sourceTree = "<group>"; };
+		9183FAA71764F74A007E2DCA /* uranus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = uranus.jpg; sourceTree = "<group>"; };
 		9189DB591744B52100897E56 /* Planets */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Planets; sourceTree = BUILT_PRODUCTS_DIR; };
 		9189DB5C1744B52100897E56 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		9189DB5E1744B52100897E56 /* Planets.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Planets.1; sourceTree = "<group>"; };
@@ -243,6 +261,8 @@
 				9189DB6D1744B55300897E56 /* vbomesh.h */,
 				9189DB5C1744B52100897E56 /* main.cpp */,
 				9189DB5E1744B52100897E56 /* Planets.1 */,
+				9183FAA01764D48E007E2DCA /* Planet.cpp */,
+				9183FAA11764D48E007E2DCA /* Planet.h */,
 			);
 			path = Planets;
 			sourceTree = "<group>";
@@ -421,6 +441,11 @@
 		9189DBF51744C82000897E56 /* texture */ = {
 			isa = PBXGroup;
 			children = (
+				9183FAA31764F74A007E2DCA /* jupiter.jpg */,
+				9183FAA41764F74A007E2DCA /* neptune.jpg */,
+				9183FAA51764F74A007E2DCA /* pluto.jpg */,
+				9183FAA61764F74A007E2DCA /* saturn.jpg */,
+				9183FAA71764F74A007E2DCA /* uranus.jpg */,
 				91635D39175694150024AEEC /* mars.jpg */,
 				9138759D174555D1008AE8BB /* venus.jpg */,
 				9138759B174553F1008AE8BB /* sun.jpg */,
@@ -501,6 +526,7 @@
 				9189DBEA1744C55400897E56 /* texture.fs in Sources */,
 				9189DBEB1744C55400897E56 /* texture.vs in Sources */,
 				91635D38175683F00024AEEC /* cTimer.cpp in Sources */,
+				9183FAA21764D48E007E2DCA /* Planet.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
