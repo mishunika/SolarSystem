@@ -7,17 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9138759C17455406008AE8BB /* sun.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9138759B174553F1008AE8BB /* sun.jpg */; };
-		9138759E174555D6008AE8BB /* venus.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9138759D174555D1008AE8BB /* venus.jpg */; };
-		913875A01745F8A0008AE8BB /* sphere_.obj in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9138759F1745F895008AE8BB /* sphere_.obj */; };
-		91635D38175683F00024AEEC /* cTimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 91635D35175683F00024AEEC /* cTimer.cpp */; };
-		91635D3A1756941B0024AEEC /* mars.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 91635D39175694150024AEEC /* mars.jpg */; };
+		9112186B1774715800F27D48 /* cTimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9112181A1774715800F27D48 /* cTimer.cpp */; };
+		9112186C1774715800F27D48 /* texture.fs in Sources */ = {isa = PBXBuildFile; fileRef = 911218221774715800F27D48 /* texture.fs */; };
+		9112186D1774715800F27D48 /* texture.vs in Sources */ = {isa = PBXBuildFile; fileRef = 911218231774715800F27D48 /* texture.vs */; };
+		9112186E1774715800F27D48 /* texture.fs in Sources */ = {isa = PBXBuildFile; fileRef = 911218241774715800F27D48 /* texture.fs */; };
+		9112186F1774715800F27D48 /* texture.vs in Sources */ = {isa = PBXBuildFile; fileRef = 911218251774715800F27D48 /* texture.vs */; };
+		911218701774715800F27D48 /* libSOIL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9112182F1774715800F27D48 /* libSOIL.a */; };
+		911218711774715800F27D48 /* SOIL.lib in Frameworks */ = {isa = PBXBuildFile; fileRef = 911218301774715800F27D48 /* SOIL.lib */; };
+		911218721774715800F27D48 /* image_DXT.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 911218321774715800F27D48 /* image_DXT.o */; };
+		911218731774715800F27D48 /* image_helper.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 911218331774715800F27D48 /* image_helper.o */; };
+		911218741774715800F27D48 /* SOIL.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 911218341774715800F27D48 /* SOIL.o */; };
+		911218751774715800F27D48 /* stb_image_aug.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 911218351774715800F27D48 /* stb_image_aug.o */; };
+		911218761774715800F27D48 /* makefile in Sources */ = {isa = PBXBuildFile; fileRef = 9112183B1774715800F27D48 /* makefile */; };
+		911218771774715800F27D48 /* image_DXT.c in Sources */ = {isa = PBXBuildFile; fileRef = 9112184D1774715800F27D48 /* image_DXT.c */; };
+		911218781774715800F27D48 /* image_helper.c in Sources */ = {isa = PBXBuildFile; fileRef = 9112184F1774715800F27D48 /* image_helper.c */; };
+		911218791774715800F27D48 /* stb_image-1.09.c in Sources */ = {isa = PBXBuildFile; fileRef = 911218521774715800F27D48 /* stb_image-1.09.c */; };
+		9112187A1774715800F27D48 /* stb_image-1.16.c in Sources */ = {isa = PBXBuildFile; fileRef = 911218531774715800F27D48 /* stb_image-1.16.c */; };
+		9112187B1774715800F27D48 /* SOIL.c in Sources */ = {isa = PBXBuildFile; fileRef = 911218541774715800F27D48 /* SOIL.c */; };
+		9112187C1774715800F27D48 /* stb_image_aug.c in Sources */ = {isa = PBXBuildFile; fileRef = 911218561774715800F27D48 /* stb_image_aug.c */; };
+		9112187D1774715800F27D48 /* test_SOIL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9112185A1774715800F27D48 /* test_SOIL.cpp */; };
 		9183FAA21764D48E007E2DCA /* Planet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9183FAA01764D48E007E2DCA /* Planet.cpp */; };
-		9183FAA81764F755007E2DCA /* jupiter.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9183FAA31764F74A007E2DCA /* jupiter.jpg */; };
-		9183FAA91764F755007E2DCA /* neptune.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9183FAA41764F74A007E2DCA /* neptune.jpg */; };
-		9183FAAA1764F755007E2DCA /* pluto.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9183FAA51764F74A007E2DCA /* pluto.jpg */; };
-		9183FAAB1764F755007E2DCA /* saturn.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9183FAA61764F74A007E2DCA /* saturn.jpg */; };
-		9183FAAC1764F755007E2DCA /* uranus.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9183FAA71764F74A007E2DCA /* uranus.jpg */; };
 		9189DB5D1744B52100897E56 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9189DB5C1744B52100897E56 /* main.cpp */; };
 		9189DB5F1744B52100897E56 /* Planets.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9189DB5E1744B52100897E56 /* Planets.1 */; };
 		9189DB6E1744B55300897E56 /* drawable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9189DB661744B55300897E56 /* drawable.cpp */; };
@@ -27,25 +36,7 @@
 		9189DB741744B59600897E56 /* cTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9189DB721744B59600897E56 /* cTexture.cpp */; };
 		9189DB761744B63D00897E56 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9189DB751744B63D00897E56 /* OpenGL.framework */; };
 		9189DB781744B64300897E56 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9189DB771744B64300897E56 /* GLUT.framework */; };
-		9189DBCA1744BC8700897E56 /* makefile in Sources */ = {isa = PBXBuildFile; fileRef = 9189DBA31744BC8700897E56 /* makefile */; };
-		9189DBCB1744BC8700897E56 /* image_DXT.c in Sources */ = {isa = PBXBuildFile; fileRef = 9189DBB51744BC8700897E56 /* image_DXT.c */; };
-		9189DBCC1744BC8700897E56 /* image_helper.c in Sources */ = {isa = PBXBuildFile; fileRef = 9189DBB71744BC8700897E56 /* image_helper.c */; };
-		9189DBCF1744BC8700897E56 /* SOIL.c in Sources */ = {isa = PBXBuildFile; fileRef = 9189DBBC1744BC8700897E56 /* SOIL.c */; };
 		9189DBD51744BE3500897E56 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9189DBD41744BE3500897E56 /* CoreFoundation.framework */; };
-		9189DBDE1744C25D00897E56 /* libSOIL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9189DB9C1744BC8700897E56 /* libSOIL.a */; };
-		9189DBDF1744C25D00897E56 /* SOIL.lib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9189DB9D1744BC8700897E56 /* SOIL.lib */; };
-		9189DBE01744C47F00897E56 /* stb_image_aug.c in Sources */ = {isa = PBXBuildFile; fileRef = 9189DBBE1744BC8700897E56 /* stb_image_aug.c */; };
-		9189DBE81744C55400897E56 /* texture.fs in Sources */ = {isa = PBXBuildFile; fileRef = 9189DBE41744C55400897E56 /* texture.fs */; };
-		9189DBE91744C55400897E56 /* texture.vs in Sources */ = {isa = PBXBuildFile; fileRef = 9189DBE51744C55400897E56 /* texture.vs */; };
-		9189DBEA1744C55400897E56 /* texture.fs in Sources */ = {isa = PBXBuildFile; fileRef = 9189DBE61744C55400897E56 /* texture.fs */; };
-		9189DBEB1744C55400897E56 /* texture.vs in Sources */ = {isa = PBXBuildFile; fileRef = 9189DBE71744C55400897E56 /* texture.vs */; };
-		9189DBEC1744C56200897E56 /* texture.fs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9189DBE61744C55400897E56 /* texture.fs */; };
-		9189DBED1744C56200897E56 /* texture.vs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9189DBE71744C55400897E56 /* texture.vs */; };
-		9189DBEF1744C56D00897E56 /* texture.fs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9189DBE41744C55400897E56 /* texture.fs */; };
-		9189DBF01744C56D00897E56 /* texture.vs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9189DBE51744C55400897E56 /* texture.vs */; };
-		9189DBF41744C77200897E56 /* sphere.obj in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9189DBF31744C75400897E56 /* sphere.obj */; };
-		9189DBF91744C83200897E56 /* earth.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9189DBF61744C82000897E56 /* earth.jpg */; };
-		9189DBFA1744C83200897E56 /* mercury.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9189DBF71744C82000897E56 /* mercury.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -65,8 +56,6 @@
 			dstPath = shader;
 			dstSubfolderSpec = 7;
 			files = (
-				9189DBEC1744C56200897E56 /* texture.fs in CopyFiles */,
-				9189DBED1744C56200897E56 /* texture.vs in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,8 +65,6 @@
 			dstPath = shader/120;
 			dstSubfolderSpec = 7;
 			files = (
-				9189DBEF1744C56D00897E56 /* texture.fs in CopyFiles */,
-				9189DBF01744C56D00897E56 /* texture.vs in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,8 +74,6 @@
 			dstPath = mesh;
 			dstSubfolderSpec = 7;
 			files = (
-				913875A01745F8A0008AE8BB /* sphere_.obj in CopyFiles */,
-				9189DBF41744C77200897E56 /* sphere.obj in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,36 +83,77 @@
 			dstPath = texture;
 			dstSubfolderSpec = 7;
 			files = (
-				9183FAA81764F755007E2DCA /* jupiter.jpg in CopyFiles */,
-				9183FAA91764F755007E2DCA /* neptune.jpg in CopyFiles */,
-				9183FAAA1764F755007E2DCA /* pluto.jpg in CopyFiles */,
-				9183FAAB1764F755007E2DCA /* saturn.jpg in CopyFiles */,
-				9183FAAC1764F755007E2DCA /* uranus.jpg in CopyFiles */,
-				91635D3A1756941B0024AEEC /* mars.jpg in CopyFiles */,
-				9138759E174555D6008AE8BB /* venus.jpg in CopyFiles */,
-				9138759C17455406008AE8BB /* sun.jpg in CopyFiles */,
-				9189DBF91744C83200897E56 /* earth.jpg in CopyFiles */,
-				9189DBFA1744C83200897E56 /* mercury.jpg in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9138759B174553F1008AE8BB /* sun.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sun.jpg; sourceTree = "<group>"; };
-		9138759D174555D1008AE8BB /* venus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = venus.jpg; sourceTree = "<group>"; };
-		9138759F1745F895008AE8BB /* sphere_.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sphere_.obj; sourceTree = "<group>"; };
-		91635D35175683F00024AEEC /* cTimer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cTimer.cpp; sourceTree = "<group>"; };
-		91635D36175683F00024AEEC /* cTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cTimer.h; sourceTree = "<group>"; };
-		91635D37175683F00024AEEC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		91635D39175694150024AEEC /* mars.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mars.jpg; sourceTree = "<group>"; };
+		9112181A1774715800F27D48 /* cTimer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cTimer.cpp; sourceTree = "<group>"; };
+		9112181B1774715800F27D48 /* cTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cTimer.h; sourceTree = "<group>"; };
+		9112181C1774715800F27D48 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		9112181E1774715800F27D48 /* sphere.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sphere.obj; sourceTree = "<group>"; };
+		9112181F1774715800F27D48 /* sphere_.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sphere_.obj; sourceTree = "<group>"; };
+		911218221774715800F27D48 /* texture.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = texture.fs; sourceTree = "<group>"; };
+		911218231774715800F27D48 /* texture.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = texture.vs; sourceTree = "<group>"; };
+		911218241774715800F27D48 /* texture.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = texture.fs; sourceTree = "<group>"; };
+		911218251774715800F27D48 /* texture.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = texture.vs; sourceTree = "<group>"; };
+		911218271774715800F27D48 /* field_128_cube.dds */ = {isa = PBXFileReference; lastKnownFileType = file; path = field_128_cube.dds; sourceTree = "<group>"; };
+		911218281774715800F27D48 /* img_cheryl.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img_cheryl.jpg; sourceTree = "<group>"; };
+		911218291774715800F27D48 /* img_test.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = img_test.bmp; sourceTree = "<group>"; };
+		9112182A1774715800F27D48 /* img_test.dds */ = {isa = PBXFileReference; lastKnownFileType = file; path = img_test.dds; sourceTree = "<group>"; };
+		9112182B1774715800F27D48 /* img_test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_test.png; sourceTree = "<group>"; };
+		9112182C1774715800F27D48 /* img_test.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = img_test.tga; sourceTree = "<group>"; };
+		9112182D1774715800F27D48 /* img_test_indexed.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = img_test_indexed.tga; sourceTree = "<group>"; };
+		9112182F1774715800F27D48 /* libSOIL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSOIL.a; sourceTree = "<group>"; };
+		911218301774715800F27D48 /* SOIL.lib */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = SOIL.lib; sourceTree = "<group>"; };
+		911218321774715800F27D48 /* image_DXT.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = image_DXT.o; sourceTree = "<group>"; };
+		911218331774715800F27D48 /* image_helper.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = image_helper.o; sourceTree = "<group>"; };
+		911218341774715800F27D48 /* SOIL.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = SOIL.o; sourceTree = "<group>"; };
+		911218351774715800F27D48 /* stb_image_aug.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = stb_image_aug.o; sourceTree = "<group>"; };
+		911218381774715800F27D48 /* SOIL.cbp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SOIL.cbp; sourceTree = "<group>"; };
+		9112183A1774715800F27D48 /* alternate Makefile.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "alternate Makefile.txt"; sourceTree = "<group>"; };
+		9112183B1774715800F27D48 /* makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
+		9112183D1774715800F27D48 /* SOIL.dsp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SOIL.dsp; sourceTree = "<group>"; };
+		9112183E1774715800F27D48 /* SOIL.dsw */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SOIL.dsw; sourceTree = "<group>"; };
+		911218401774715800F27D48 /* SOIL.sln */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SOIL.sln; sourceTree = "<group>"; };
+		911218411774715800F27D48 /* SOIL.vcproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SOIL.vcproj; sourceTree = "<group>"; };
+		911218431774715800F27D48 /* SOIL.sln */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SOIL.sln; sourceTree = "<group>"; };
+		911218441774715800F27D48 /* SOIL.vcproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SOIL.vcproj; sourceTree = "<group>"; };
+		911218461774715800F27D48 /* SOIL.ncb */ = {isa = PBXFileReference; lastKnownFileType = file; path = SOIL.ncb; sourceTree = "<group>"; };
+		911218471774715800F27D48 /* SOIL.sln */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SOIL.sln; sourceTree = "<group>"; };
+		911218481774715800F27D48 /* SOIL.suo */ = {isa = PBXFileReference; lastKnownFileType = file; path = SOIL.suo; sourceTree = "<group>"; };
+		911218491774715800F27D48 /* SOIL.vcproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SOIL.vcproj; sourceTree = "<group>"; };
+		9112184A1774715800F27D48 /* SOIL.vcproj.Win7PC.Win7.user */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SOIL.vcproj.Win7PC.Win7.user; sourceTree = "<group>"; };
+		9112184B1774715800F27D48 /* soil.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = soil.html; sourceTree = "<group>"; };
+		9112184D1774715800F27D48 /* image_DXT.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = image_DXT.c; sourceTree = "<group>"; };
+		9112184E1774715800F27D48 /* image_DXT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = image_DXT.h; sourceTree = "<group>"; };
+		9112184F1774715800F27D48 /* image_helper.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = image_helper.c; sourceTree = "<group>"; };
+		911218501774715800F27D48 /* image_helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = image_helper.h; sourceTree = "<group>"; };
+		911218521774715800F27D48 /* stb_image-1.09.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "stb_image-1.09.c"; sourceTree = "<group>"; };
+		911218531774715800F27D48 /* stb_image-1.16.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "stb_image-1.16.c"; sourceTree = "<group>"; };
+		911218541774715800F27D48 /* SOIL.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SOIL.c; sourceTree = "<group>"; };
+		911218551774715800F27D48 /* SOIL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOIL.h; sourceTree = "<group>"; };
+		911218561774715800F27D48 /* stb_image_aug.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stb_image_aug.c; sourceTree = "<group>"; };
+		911218571774715800F27D48 /* stb_image_aug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image_aug.h; sourceTree = "<group>"; };
+		911218581774715800F27D48 /* stbi_DDS_aug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_DDS_aug.h; sourceTree = "<group>"; };
+		911218591774715800F27D48 /* stbi_DDS_aug_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_DDS_aug_c.h; sourceTree = "<group>"; };
+		9112185A1774715800F27D48 /* test_SOIL.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_SOIL.cpp; sourceTree = "<group>"; };
+		9112185D1774715800F27D48 /* SOIL.bi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SOIL.bi; sourceTree = "<group>"; };
+		9112185E1774715800F27D48 /* test_rect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_rect.png; sourceTree = "<group>"; };
+		9112185F1774715800F27D48 /* testSOIL.exe */ = {isa = PBXFileReference; lastKnownFileType = file; path = testSOIL.exe; sourceTree = "<group>"; };
+		911218611774715800F27D48 /* earth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = earth.jpg; sourceTree = "<group>"; };
+		911218621774715800F27D48 /* jupiter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jupiter.jpg; sourceTree = "<group>"; };
+		911218631774715800F27D48 /* mars.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mars.jpg; sourceTree = "<group>"; };
+		911218641774715800F27D48 /* mercury.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mercury.jpg; sourceTree = "<group>"; };
+		911218651774715800F27D48 /* neptune.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = neptune.jpg; sourceTree = "<group>"; };
+		911218661774715800F27D48 /* pluto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pluto.jpg; sourceTree = "<group>"; };
+		911218671774715800F27D48 /* saturn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = saturn.jpg; sourceTree = "<group>"; };
+		911218681774715800F27D48 /* sun.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sun.jpg; sourceTree = "<group>"; };
+		911218691774715800F27D48 /* uranus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = uranus.jpg; sourceTree = "<group>"; };
+		9112186A1774715800F27D48 /* venus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = venus.jpg; sourceTree = "<group>"; };
 		9183FAA01764D48E007E2DCA /* Planet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Planet.cpp; sourceTree = "<group>"; };
 		9183FAA11764D48E007E2DCA /* Planet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Planet.h; sourceTree = "<group>"; };
-		9183FAA31764F74A007E2DCA /* jupiter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jupiter.jpg; sourceTree = "<group>"; };
-		9183FAA41764F74A007E2DCA /* neptune.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = neptune.jpg; sourceTree = "<group>"; };
-		9183FAA51764F74A007E2DCA /* pluto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pluto.jpg; sourceTree = "<group>"; };
-		9183FAA61764F74A007E2DCA /* saturn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = saturn.jpg; sourceTree = "<group>"; };
-		9183FAA71764F74A007E2DCA /* uranus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = uranus.jpg; sourceTree = "<group>"; };
 		9189DB591744B52100897E56 /* Planets */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Planets; sourceTree = BUILT_PRODUCTS_DIR; };
 		9189DB5C1744B52100897E56 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		9189DB5E1744B52100897E56 /* Planets.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Planets.1; sourceTree = "<group>"; };
@@ -144,54 +170,7 @@
 		9189DB731744B59600897E56 /* cTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cTexture.h; sourceTree = "<group>"; };
 		9189DB751744B63D00897E56 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		9189DB771744B64300897E56 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
-		9189DB941744BC8700897E56 /* field_128_cube.dds */ = {isa = PBXFileReference; lastKnownFileType = file; path = field_128_cube.dds; sourceTree = "<group>"; };
-		9189DB951744BC8700897E56 /* img_cheryl.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img_cheryl.jpg; sourceTree = "<group>"; };
-		9189DB961744BC8700897E56 /* img_test.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = img_test.bmp; sourceTree = "<group>"; };
-		9189DB971744BC8700897E56 /* img_test.dds */ = {isa = PBXFileReference; lastKnownFileType = file; path = img_test.dds; sourceTree = "<group>"; };
-		9189DB981744BC8700897E56 /* img_test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_test.png; sourceTree = "<group>"; };
-		9189DB991744BC8700897E56 /* img_test.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = img_test.tga; sourceTree = "<group>"; };
-		9189DB9A1744BC8700897E56 /* img_test_indexed.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = img_test_indexed.tga; sourceTree = "<group>"; };
-		9189DB9C1744BC8700897E56 /* libSOIL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSOIL.a; sourceTree = "<group>"; };
-		9189DB9D1744BC8700897E56 /* SOIL.lib */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = SOIL.lib; sourceTree = "<group>"; };
-		9189DBA01744BC8700897E56 /* SOIL.cbp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SOIL.cbp; sourceTree = "<group>"; };
-		9189DBA21744BC8700897E56 /* alternate Makefile.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "alternate Makefile.txt"; sourceTree = "<group>"; };
-		9189DBA31744BC8700897E56 /* makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
-		9189DBA51744BC8700897E56 /* SOIL.dsp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SOIL.dsp; sourceTree = "<group>"; };
-		9189DBA61744BC8700897E56 /* SOIL.dsw */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SOIL.dsw; sourceTree = "<group>"; };
-		9189DBA81744BC8700897E56 /* SOIL.sln */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SOIL.sln; sourceTree = "<group>"; };
-		9189DBA91744BC8700897E56 /* SOIL.vcproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SOIL.vcproj; sourceTree = "<group>"; };
-		9189DBAB1744BC8700897E56 /* SOIL.sln */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SOIL.sln; sourceTree = "<group>"; };
-		9189DBAC1744BC8700897E56 /* SOIL.vcproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SOIL.vcproj; sourceTree = "<group>"; };
-		9189DBAE1744BC8700897E56 /* SOIL.ncb */ = {isa = PBXFileReference; lastKnownFileType = file; path = SOIL.ncb; sourceTree = "<group>"; };
-		9189DBAF1744BC8700897E56 /* SOIL.sln */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SOIL.sln; sourceTree = "<group>"; };
-		9189DBB01744BC8700897E56 /* SOIL.suo */ = {isa = PBXFileReference; lastKnownFileType = file; path = SOIL.suo; sourceTree = "<group>"; };
-		9189DBB11744BC8700897E56 /* SOIL.vcproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SOIL.vcproj; sourceTree = "<group>"; };
-		9189DBB21744BC8700897E56 /* SOIL.vcproj.Win7PC.Win7.user */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SOIL.vcproj.Win7PC.Win7.user; sourceTree = "<group>"; };
-		9189DBB31744BC8700897E56 /* soil.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = soil.html; sourceTree = "<group>"; };
-		9189DBB51744BC8700897E56 /* image_DXT.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = image_DXT.c; sourceTree = "<group>"; };
-		9189DBB61744BC8700897E56 /* image_DXT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = image_DXT.h; sourceTree = "<group>"; };
-		9189DBB71744BC8700897E56 /* image_helper.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = image_helper.c; sourceTree = "<group>"; };
-		9189DBB81744BC8700897E56 /* image_helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = image_helper.h; sourceTree = "<group>"; };
-		9189DBBA1744BC8700897E56 /* stb_image-1.09.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "stb_image-1.09.c"; sourceTree = "<group>"; };
-		9189DBBB1744BC8700897E56 /* stb_image-1.16.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "stb_image-1.16.c"; sourceTree = "<group>"; };
-		9189DBBC1744BC8700897E56 /* SOIL.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SOIL.c; sourceTree = "<group>"; };
-		9189DBBD1744BC8700897E56 /* SOIL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOIL.h; sourceTree = "<group>"; };
-		9189DBBE1744BC8700897E56 /* stb_image_aug.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stb_image_aug.c; sourceTree = "<group>"; };
-		9189DBBF1744BC8700897E56 /* stb_image_aug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image_aug.h; sourceTree = "<group>"; };
-		9189DBC01744BC8700897E56 /* stbi_DDS_aug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_DDS_aug.h; sourceTree = "<group>"; };
-		9189DBC11744BC8700897E56 /* stbi_DDS_aug_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stbi_DDS_aug_c.h; sourceTree = "<group>"; };
-		9189DBC21744BC8700897E56 /* test_SOIL.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_SOIL.cpp; sourceTree = "<group>"; };
-		9189DBC51744BC8700897E56 /* SOIL.bi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SOIL.bi; sourceTree = "<group>"; };
-		9189DBC61744BC8700897E56 /* test_rect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_rect.png; sourceTree = "<group>"; };
-		9189DBC71744BC8700897E56 /* testSOIL.exe */ = {isa = PBXFileReference; lastKnownFileType = file; path = testSOIL.exe; sourceTree = "<group>"; };
 		9189DBD41744BE3500897E56 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		9189DBE41744C55400897E56 /* texture.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = texture.fs; sourceTree = "<group>"; };
-		9189DBE51744C55400897E56 /* texture.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = texture.vs; sourceTree = "<group>"; };
-		9189DBE61744C55400897E56 /* texture.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = texture.fs; sourceTree = "<group>"; };
-		9189DBE71744C55400897E56 /* texture.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = texture.vs; sourceTree = "<group>"; };
-		9189DBF31744C75400897E56 /* sphere.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sphere.obj; sourceTree = "<group>"; };
-		9189DBF61744C82000897E56 /* earth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = earth.jpg; sourceTree = "<group>"; };
-		9189DBF71744C82000897E56 /* mercury.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mercury.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,26 +178,229 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9189DBDE1744C25D00897E56 /* libSOIL.a in Frameworks */,
-				9189DBDF1744C25D00897E56 /* SOIL.lib in Frameworks */,
 				9189DBD51744BE3500897E56 /* CoreFoundation.framework in Frameworks */,
 				9189DB781744B64300897E56 /* GLUT.framework in Frameworks */,
 				9189DB761744B63D00897E56 /* OpenGL.framework in Frameworks */,
+				911218701774715800F27D48 /* libSOIL.a in Frameworks */,
+				911218711774715800F27D48 /* SOIL.lib in Frameworks */,
+				911218721774715800F27D48 /* image_DXT.o in Frameworks */,
+				911218731774715800F27D48 /* image_helper.o in Frameworks */,
+				911218741774715800F27D48 /* SOIL.o in Frameworks */,
+				911218751774715800F27D48 /* stb_image_aug.o in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		91635D34175683EF0024AEEC /* cTimer */ = {
+		911218191774715800F27D48 /* cTimer */ = {
 			isa = PBXGroup;
 			children = (
-				91635D35175683F00024AEEC /* cTimer.cpp */,
-				91635D36175683F00024AEEC /* cTimer.h */,
-				91635D37175683F00024AEEC /* README.md */,
+				9112181A1774715800F27D48 /* cTimer.cpp */,
+				9112181B1774715800F27D48 /* cTimer.h */,
+				9112181C1774715800F27D48 /* README.md */,
 			);
-			name = cTimer;
-			path = ../../cTimer;
+			path = cTimer;
+			sourceTree = "<group>";
+		};
+		9112181D1774715800F27D48 /* mesh */ = {
+			isa = PBXGroup;
+			children = (
+				9112181E1774715800F27D48 /* sphere.obj */,
+				9112181F1774715800F27D48 /* sphere_.obj */,
+			);
+			path = mesh;
+			sourceTree = "<group>";
+		};
+		911218201774715800F27D48 /* shader */ = {
+			isa = PBXGroup;
+			children = (
+				911218211774715800F27D48 /* 120 */,
+				911218241774715800F27D48 /* texture.fs */,
+				911218251774715800F27D48 /* texture.vs */,
+			);
+			path = shader;
+			sourceTree = "<group>";
+		};
+		911218211774715800F27D48 /* 120 */ = {
+			isa = PBXGroup;
+			children = (
+				911218221774715800F27D48 /* texture.fs */,
+				911218231774715800F27D48 /* texture.vs */,
+			);
+			path = 120;
+			sourceTree = "<group>";
+		};
+		911218261774715800F27D48 /* soil */ = {
+			isa = PBXGroup;
+			children = (
+				911218271774715800F27D48 /* field_128_cube.dds */,
+				911218281774715800F27D48 /* img_cheryl.jpg */,
+				911218291774715800F27D48 /* img_test.bmp */,
+				9112182A1774715800F27D48 /* img_test.dds */,
+				9112182B1774715800F27D48 /* img_test.png */,
+				9112182C1774715800F27D48 /* img_test.tga */,
+				9112182D1774715800F27D48 /* img_test_indexed.tga */,
+				9112182E1774715800F27D48 /* lib */,
+				911218311774715800F27D48 /* obj */,
+				911218361774715800F27D48 /* projects */,
+				9112184B1774715800F27D48 /* soil.html */,
+				9112184C1774715800F27D48 /* src */,
+				9112185B1774715800F27D48 /* support */,
+				9112185E1774715800F27D48 /* test_rect.png */,
+				9112185F1774715800F27D48 /* testSOIL.exe */,
+			);
+			path = soil;
+			sourceTree = "<group>";
+		};
+		9112182E1774715800F27D48 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				9112182F1774715800F27D48 /* libSOIL.a */,
+				911218301774715800F27D48 /* SOIL.lib */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		911218311774715800F27D48 /* obj */ = {
+			isa = PBXGroup;
+			children = (
+				911218321774715800F27D48 /* image_DXT.o */,
+				911218331774715800F27D48 /* image_helper.o */,
+				911218341774715800F27D48 /* SOIL.o */,
+				911218351774715800F27D48 /* stb_image_aug.o */,
+			);
+			path = obj;
+			sourceTree = "<group>";
+		};
+		911218361774715800F27D48 /* projects */ = {
+			isa = PBXGroup;
+			children = (
+				911218371774715800F27D48 /* codeblocks */,
+				911218391774715800F27D48 /* makefile */,
+				9112183C1774715800F27D48 /* VC6 */,
+				9112183F1774715800F27D48 /* VC7.1 */,
+				911218421774715800F27D48 /* VC8 */,
+				911218451774715800F27D48 /* VC9 */,
+			);
+			path = projects;
+			sourceTree = "<group>";
+		};
+		911218371774715800F27D48 /* codeblocks */ = {
+			isa = PBXGroup;
+			children = (
+				911218381774715800F27D48 /* SOIL.cbp */,
+			);
+			path = codeblocks;
+			sourceTree = "<group>";
+		};
+		911218391774715800F27D48 /* makefile */ = {
+			isa = PBXGroup;
+			children = (
+				9112183A1774715800F27D48 /* alternate Makefile.txt */,
+				9112183B1774715800F27D48 /* makefile */,
+			);
+			path = makefile;
+			sourceTree = "<group>";
+		};
+		9112183C1774715800F27D48 /* VC6 */ = {
+			isa = PBXGroup;
+			children = (
+				9112183D1774715800F27D48 /* SOIL.dsp */,
+				9112183E1774715800F27D48 /* SOIL.dsw */,
+			);
+			path = VC6;
+			sourceTree = "<group>";
+		};
+		9112183F1774715800F27D48 /* VC7.1 */ = {
+			isa = PBXGroup;
+			children = (
+				911218401774715800F27D48 /* SOIL.sln */,
+				911218411774715800F27D48 /* SOIL.vcproj */,
+			);
+			path = VC7.1;
+			sourceTree = "<group>";
+		};
+		911218421774715800F27D48 /* VC8 */ = {
+			isa = PBXGroup;
+			children = (
+				911218431774715800F27D48 /* SOIL.sln */,
+				911218441774715800F27D48 /* SOIL.vcproj */,
+			);
+			path = VC8;
+			sourceTree = "<group>";
+		};
+		911218451774715800F27D48 /* VC9 */ = {
+			isa = PBXGroup;
+			children = (
+				911218461774715800F27D48 /* SOIL.ncb */,
+				911218471774715800F27D48 /* SOIL.sln */,
+				911218481774715800F27D48 /* SOIL.suo */,
+				911218491774715800F27D48 /* SOIL.vcproj */,
+				9112184A1774715800F27D48 /* SOIL.vcproj.Win7PC.Win7.user */,
+			);
+			path = VC9;
+			sourceTree = "<group>";
+		};
+		9112184C1774715800F27D48 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				9112184D1774715800F27D48 /* image_DXT.c */,
+				9112184E1774715800F27D48 /* image_DXT.h */,
+				9112184F1774715800F27D48 /* image_helper.c */,
+				911218501774715800F27D48 /* image_helper.h */,
+				911218511774715800F27D48 /* original */,
+				911218541774715800F27D48 /* SOIL.c */,
+				911218551774715800F27D48 /* SOIL.h */,
+				911218561774715800F27D48 /* stb_image_aug.c */,
+				911218571774715800F27D48 /* stb_image_aug.h */,
+				911218581774715800F27D48 /* stbi_DDS_aug.h */,
+				911218591774715800F27D48 /* stbi_DDS_aug_c.h */,
+				9112185A1774715800F27D48 /* test_SOIL.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		911218511774715800F27D48 /* original */ = {
+			isa = PBXGroup;
+			children = (
+				911218521774715800F27D48 /* stb_image-1.09.c */,
+				911218531774715800F27D48 /* stb_image-1.16.c */,
+			);
+			path = original;
+			sourceTree = "<group>";
+		};
+		9112185B1774715800F27D48 /* support */ = {
+			isa = PBXGroup;
+			children = (
+				9112185C1774715800F27D48 /* FreeBasic */,
+			);
+			path = support;
+			sourceTree = "<group>";
+		};
+		9112185C1774715800F27D48 /* FreeBasic */ = {
+			isa = PBXGroup;
+			children = (
+				9112185D1774715800F27D48 /* SOIL.bi */,
+			);
+			path = FreeBasic;
+			sourceTree = "<group>";
+		};
+		911218601774715800F27D48 /* texture */ = {
+			isa = PBXGroup;
+			children = (
+				911218611774715800F27D48 /* earth.jpg */,
+				911218621774715800F27D48 /* jupiter.jpg */,
+				911218631774715800F27D48 /* mars.jpg */,
+				911218641774715800F27D48 /* mercury.jpg */,
+				911218651774715800F27D48 /* neptune.jpg */,
+				911218661774715800F27D48 /* pluto.jpg */,
+				911218671774715800F27D48 /* saturn.jpg */,
+				911218681774715800F27D48 /* sun.jpg */,
+				911218691774715800F27D48 /* uranus.jpg */,
+				9112186A1774715800F27D48 /* venus.jpg */,
+			);
+			path = texture;
 			sourceTree = "<group>";
 		};
 		9189DB501744B52100897E56 = {
@@ -243,11 +425,11 @@
 		9189DB5B1744B52100897E56 /* Planets */ = {
 			isa = PBXGroup;
 			children = (
-				91635D34175683EF0024AEEC /* cTimer */,
-				9189DBF51744C82000897E56 /* texture */,
-				9189DBF21744C75400897E56 /* mesh */,
-				9189DBE21744C55400897E56 /* shader */,
-				9189DB931744BC8700897E56 /* soil */,
+				911218191774715800F27D48 /* cTimer */,
+				9112181D1774715800F27D48 /* mesh */,
+				911218201774715800F27D48 /* shader */,
+				911218261774715800F27D48 /* soil */,
+				911218601774715800F27D48 /* texture */,
 				9189DB721744B59600897E56 /* cTexture.cpp */,
 				9189DB731744B59600897E56 /* cTexture.h */,
 				9189DB651744B55300897E56 /* defines.h */,
@@ -265,194 +447,6 @@
 				9183FAA11764D48E007E2DCA /* Planet.h */,
 			);
 			path = Planets;
-			sourceTree = "<group>";
-		};
-		9189DB931744BC8700897E56 /* soil */ = {
-			isa = PBXGroup;
-			children = (
-				9189DB941744BC8700897E56 /* field_128_cube.dds */,
-				9189DB951744BC8700897E56 /* img_cheryl.jpg */,
-				9189DB961744BC8700897E56 /* img_test.bmp */,
-				9189DB971744BC8700897E56 /* img_test.dds */,
-				9189DB981744BC8700897E56 /* img_test.png */,
-				9189DB991744BC8700897E56 /* img_test.tga */,
-				9189DB9A1744BC8700897E56 /* img_test_indexed.tga */,
-				9189DB9B1744BC8700897E56 /* lib */,
-				9189DB9E1744BC8700897E56 /* projects */,
-				9189DBB31744BC8700897E56 /* soil.html */,
-				9189DBB41744BC8700897E56 /* src */,
-				9189DBC31744BC8700897E56 /* support */,
-				9189DBC61744BC8700897E56 /* test_rect.png */,
-				9189DBC71744BC8700897E56 /* testSOIL.exe */,
-			);
-			path = soil;
-			sourceTree = "<group>";
-		};
-		9189DB9B1744BC8700897E56 /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				9189DB9C1744BC8700897E56 /* libSOIL.a */,
-				9189DB9D1744BC8700897E56 /* SOIL.lib */,
-			);
-			path = lib;
-			sourceTree = "<group>";
-		};
-		9189DB9E1744BC8700897E56 /* projects */ = {
-			isa = PBXGroup;
-			children = (
-				9189DB9F1744BC8700897E56 /* codeblocks */,
-				9189DBA11744BC8700897E56 /* makefile */,
-				9189DBA41744BC8700897E56 /* VC6 */,
-				9189DBA71744BC8700897E56 /* VC7.1 */,
-				9189DBAA1744BC8700897E56 /* VC8 */,
-				9189DBAD1744BC8700897E56 /* VC9 */,
-			);
-			path = projects;
-			sourceTree = "<group>";
-		};
-		9189DB9F1744BC8700897E56 /* codeblocks */ = {
-			isa = PBXGroup;
-			children = (
-				9189DBA01744BC8700897E56 /* SOIL.cbp */,
-			);
-			path = codeblocks;
-			sourceTree = "<group>";
-		};
-		9189DBA11744BC8700897E56 /* makefile */ = {
-			isa = PBXGroup;
-			children = (
-				9189DBA21744BC8700897E56 /* alternate Makefile.txt */,
-				9189DBA31744BC8700897E56 /* makefile */,
-			);
-			path = makefile;
-			sourceTree = "<group>";
-		};
-		9189DBA41744BC8700897E56 /* VC6 */ = {
-			isa = PBXGroup;
-			children = (
-				9189DBA51744BC8700897E56 /* SOIL.dsp */,
-				9189DBA61744BC8700897E56 /* SOIL.dsw */,
-			);
-			path = VC6;
-			sourceTree = "<group>";
-		};
-		9189DBA71744BC8700897E56 /* VC7.1 */ = {
-			isa = PBXGroup;
-			children = (
-				9189DBA81744BC8700897E56 /* SOIL.sln */,
-				9189DBA91744BC8700897E56 /* SOIL.vcproj */,
-			);
-			path = VC7.1;
-			sourceTree = "<group>";
-		};
-		9189DBAA1744BC8700897E56 /* VC8 */ = {
-			isa = PBXGroup;
-			children = (
-				9189DBAB1744BC8700897E56 /* SOIL.sln */,
-				9189DBAC1744BC8700897E56 /* SOIL.vcproj */,
-			);
-			path = VC8;
-			sourceTree = "<group>";
-		};
-		9189DBAD1744BC8700897E56 /* VC9 */ = {
-			isa = PBXGroup;
-			children = (
-				9189DBAE1744BC8700897E56 /* SOIL.ncb */,
-				9189DBAF1744BC8700897E56 /* SOIL.sln */,
-				9189DBB01744BC8700897E56 /* SOIL.suo */,
-				9189DBB11744BC8700897E56 /* SOIL.vcproj */,
-				9189DBB21744BC8700897E56 /* SOIL.vcproj.Win7PC.Win7.user */,
-			);
-			path = VC9;
-			sourceTree = "<group>";
-		};
-		9189DBB41744BC8700897E56 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				9189DBB51744BC8700897E56 /* image_DXT.c */,
-				9189DBB61744BC8700897E56 /* image_DXT.h */,
-				9189DBB71744BC8700897E56 /* image_helper.c */,
-				9189DBB81744BC8700897E56 /* image_helper.h */,
-				9189DBB91744BC8700897E56 /* original */,
-				9189DBBC1744BC8700897E56 /* SOIL.c */,
-				9189DBBD1744BC8700897E56 /* SOIL.h */,
-				9189DBBE1744BC8700897E56 /* stb_image_aug.c */,
-				9189DBBF1744BC8700897E56 /* stb_image_aug.h */,
-				9189DBC01744BC8700897E56 /* stbi_DDS_aug.h */,
-				9189DBC11744BC8700897E56 /* stbi_DDS_aug_c.h */,
-				9189DBC21744BC8700897E56 /* test_SOIL.cpp */,
-			);
-			path = src;
-			sourceTree = "<group>";
-		};
-		9189DBB91744BC8700897E56 /* original */ = {
-			isa = PBXGroup;
-			children = (
-				9189DBBA1744BC8700897E56 /* stb_image-1.09.c */,
-				9189DBBB1744BC8700897E56 /* stb_image-1.16.c */,
-			);
-			path = original;
-			sourceTree = "<group>";
-		};
-		9189DBC31744BC8700897E56 /* support */ = {
-			isa = PBXGroup;
-			children = (
-				9189DBC41744BC8700897E56 /* FreeBasic */,
-			);
-			path = support;
-			sourceTree = "<group>";
-		};
-		9189DBC41744BC8700897E56 /* FreeBasic */ = {
-			isa = PBXGroup;
-			children = (
-				9189DBC51744BC8700897E56 /* SOIL.bi */,
-			);
-			path = FreeBasic;
-			sourceTree = "<group>";
-		};
-		9189DBE21744C55400897E56 /* shader */ = {
-			isa = PBXGroup;
-			children = (
-				9189DBE31744C55400897E56 /* 120 */,
-				9189DBE61744C55400897E56 /* texture.fs */,
-				9189DBE71744C55400897E56 /* texture.vs */,
-			);
-			path = shader;
-			sourceTree = "<group>";
-		};
-		9189DBE31744C55400897E56 /* 120 */ = {
-			isa = PBXGroup;
-			children = (
-				9189DBE41744C55400897E56 /* texture.fs */,
-				9189DBE51744C55400897E56 /* texture.vs */,
-			);
-			path = 120;
-			sourceTree = "<group>";
-		};
-		9189DBF21744C75400897E56 /* mesh */ = {
-			isa = PBXGroup;
-			children = (
-				9138759F1745F895008AE8BB /* sphere_.obj */,
-				9189DBF31744C75400897E56 /* sphere.obj */,
-			);
-			path = mesh;
-			sourceTree = "<group>";
-		};
-		9189DBF51744C82000897E56 /* texture */ = {
-			isa = PBXGroup;
-			children = (
-				9183FAA31764F74A007E2DCA /* jupiter.jpg */,
-				9183FAA41764F74A007E2DCA /* neptune.jpg */,
-				9183FAA51764F74A007E2DCA /* pluto.jpg */,
-				9183FAA61764F74A007E2DCA /* saturn.jpg */,
-				9183FAA71764F74A007E2DCA /* uranus.jpg */,
-				91635D39175694150024AEEC /* mars.jpg */,
-				9138759D174555D1008AE8BB /* venus.jpg */,
-				9138759B174553F1008AE8BB /* sun.jpg */,
-				9189DBF61744C82000897E56 /* earth.jpg */,
-				9189DBF71744C82000897E56 /* mercury.jpg */,
-			);
-			path = texture;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -510,23 +504,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9189DBE01744C47F00897E56 /* stb_image_aug.c in Sources */,
 				9189DB5D1744B52100897E56 /* main.cpp in Sources */,
 				9189DB6E1744B55300897E56 /* drawable.cpp in Sources */,
 				9189DB6F1744B55300897E56 /* glslprogram.cpp in Sources */,
 				9189DB701744B55300897E56 /* glutils.cpp in Sources */,
 				9189DB711744B55300897E56 /* vbomesh.cpp in Sources */,
 				9189DB741744B59600897E56 /* cTexture.cpp in Sources */,
-				9189DBCA1744BC8700897E56 /* makefile in Sources */,
-				9189DBCB1744BC8700897E56 /* image_DXT.c in Sources */,
-				9189DBCC1744BC8700897E56 /* image_helper.c in Sources */,
-				9189DBCF1744BC8700897E56 /* SOIL.c in Sources */,
-				9189DBE81744C55400897E56 /* texture.fs in Sources */,
-				9189DBE91744C55400897E56 /* texture.vs in Sources */,
-				9189DBEA1744C55400897E56 /* texture.fs in Sources */,
-				9189DBEB1744C55400897E56 /* texture.vs in Sources */,
-				91635D38175683F00024AEEC /* cTimer.cpp in Sources */,
 				9183FAA21764D48E007E2DCA /* Planet.cpp in Sources */,
+				9112186B1774715800F27D48 /* cTimer.cpp in Sources */,
+				9112186C1774715800F27D48 /* texture.fs in Sources */,
+				9112186D1774715800F27D48 /* texture.vs in Sources */,
+				9112186E1774715800F27D48 /* texture.fs in Sources */,
+				9112186F1774715800F27D48 /* texture.vs in Sources */,
+				911218761774715800F27D48 /* makefile in Sources */,
+				911218771774715800F27D48 /* image_DXT.c in Sources */,
+				911218781774715800F27D48 /* image_helper.c in Sources */,
+				911218791774715800F27D48 /* stb_image-1.09.c in Sources */,
+				9112187A1774715800F27D48 /* stb_image-1.16.c in Sources */,
+				9112187B1774715800F27D48 /* SOIL.c in Sources */,
+				9112187C1774715800F27D48 /* stb_image_aug.c in Sources */,
+				9112187D1774715800F27D48 /* test_SOIL.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
