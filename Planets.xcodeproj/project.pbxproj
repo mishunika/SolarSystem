@@ -25,7 +25,6 @@
 		9112187A1774715800F27D48 /* stb_image-1.16.c in Sources */ = {isa = PBXBuildFile; fileRef = 911218531774715800F27D48 /* stb_image-1.16.c */; };
 		9112187B1774715800F27D48 /* SOIL.c in Sources */ = {isa = PBXBuildFile; fileRef = 911218541774715800F27D48 /* SOIL.c */; };
 		9112187C1774715800F27D48 /* stb_image_aug.c in Sources */ = {isa = PBXBuildFile; fileRef = 911218561774715800F27D48 /* stb_image_aug.c */; };
-		9112187D1774715800F27D48 /* test_SOIL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9112185A1774715800F27D48 /* test_SOIL.cpp */; };
 		9183FAA21764D48E007E2DCA /* Planet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9183FAA01764D48E007E2DCA /* Planet.cpp */; };
 		9189DB5D1744B52100897E56 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9189DB5C1744B52100897E56 /* main.cpp */; };
 		9189DB5F1744B52100897E56 /* Planets.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9189DB5E1744B52100897E56 /* Planets.1 */; };
@@ -523,7 +522,6 @@
 				9112187A1774715800F27D48 /* stb_image-1.16.c in Sources */,
 				9112187B1774715800F27D48 /* SOIL.c in Sources */,
 				9112187C1774715800F27D48 /* stb_image_aug.c in Sources */,
-				9112187D1774715800F27D48 /* test_SOIL.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
