@@ -12,19 +12,26 @@
 		9112186D1774715800F27D48 /* texture.vs in Sources */ = {isa = PBXBuildFile; fileRef = 911218231774715800F27D48 /* texture.vs */; };
 		9112186E1774715800F27D48 /* texture.fs in Sources */ = {isa = PBXBuildFile; fileRef = 911218241774715800F27D48 /* texture.fs */; };
 		9112186F1774715800F27D48 /* texture.vs in Sources */ = {isa = PBXBuildFile; fileRef = 911218251774715800F27D48 /* texture.vs */; };
-		911218701774715800F27D48 /* libSOIL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9112182F1774715800F27D48 /* libSOIL.a */; };
-		911218711774715800F27D48 /* SOIL.lib in Frameworks */ = {isa = PBXBuildFile; fileRef = 911218301774715800F27D48 /* SOIL.lib */; };
-		911218721774715800F27D48 /* image_DXT.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 911218321774715800F27D48 /* image_DXT.o */; };
-		911218731774715800F27D48 /* image_helper.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 911218331774715800F27D48 /* image_helper.o */; };
-		911218741774715800F27D48 /* SOIL.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 911218341774715800F27D48 /* SOIL.o */; };
-		911218751774715800F27D48 /* stb_image_aug.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 911218351774715800F27D48 /* stb_image_aug.o */; };
-		911218761774715800F27D48 /* makefile in Sources */ = {isa = PBXBuildFile; fileRef = 9112183B1774715800F27D48 /* makefile */; };
 		911218771774715800F27D48 /* image_DXT.c in Sources */ = {isa = PBXBuildFile; fileRef = 9112184D1774715800F27D48 /* image_DXT.c */; };
 		911218781774715800F27D48 /* image_helper.c in Sources */ = {isa = PBXBuildFile; fileRef = 9112184F1774715800F27D48 /* image_helper.c */; };
-		911218791774715800F27D48 /* stb_image-1.09.c in Sources */ = {isa = PBXBuildFile; fileRef = 911218521774715800F27D48 /* stb_image-1.09.c */; };
-		9112187A1774715800F27D48 /* stb_image-1.16.c in Sources */ = {isa = PBXBuildFile; fileRef = 911218531774715800F27D48 /* stb_image-1.16.c */; };
 		9112187B1774715800F27D48 /* SOIL.c in Sources */ = {isa = PBXBuildFile; fileRef = 911218541774715800F27D48 /* SOIL.c */; };
 		9112187C1774715800F27D48 /* stb_image_aug.c in Sources */ = {isa = PBXBuildFile; fileRef = 911218561774715800F27D48 /* stb_image_aug.c */; };
+		9112187F1774730E00F27D48 /* texture.fs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 911218241774715800F27D48 /* texture.fs */; };
+		911218801774730E00F27D48 /* texture.vs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 911218251774715800F27D48 /* texture.vs */; };
+		911218811774731400F27D48 /* texture.fs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 911218221774715800F27D48 /* texture.fs */; };
+		911218821774731400F27D48 /* texture.vs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 911218231774715800F27D48 /* texture.vs */; };
+		911218831774731A00F27D48 /* sphere.obj in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9112181E1774715800F27D48 /* sphere.obj */; };
+		911218841774731A00F27D48 /* sphere_.obj in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9112181F1774715800F27D48 /* sphere_.obj */; };
+		911218851774732500F27D48 /* earth.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 911218611774715800F27D48 /* earth.jpg */; };
+		911218861774732500F27D48 /* jupiter.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 911218621774715800F27D48 /* jupiter.jpg */; };
+		911218871774732500F27D48 /* mars.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 911218631774715800F27D48 /* mars.jpg */; };
+		911218881774732500F27D48 /* mercury.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 911218641774715800F27D48 /* mercury.jpg */; };
+		911218891774732500F27D48 /* neptune.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 911218651774715800F27D48 /* neptune.jpg */; };
+		9112188A1774732500F27D48 /* pluto.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 911218661774715800F27D48 /* pluto.jpg */; };
+		9112188B1774732500F27D48 /* saturn.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 911218671774715800F27D48 /* saturn.jpg */; };
+		9112188C1774732500F27D48 /* sun.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 911218681774715800F27D48 /* sun.jpg */; };
+		9112188D1774732500F27D48 /* uranus.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 911218691774715800F27D48 /* uranus.jpg */; };
+		9112188E1774732500F27D48 /* venus.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9112186A1774715800F27D48 /* venus.jpg */; };
 		9183FAA21764D48E007E2DCA /* Planet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9183FAA01764D48E007E2DCA /* Planet.cpp */; };
 		9189DB5D1744B52100897E56 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9189DB5C1744B52100897E56 /* main.cpp */; };
 		9189DB5F1744B52100897E56 /* Planets.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9189DB5E1744B52100897E56 /* Planets.1 */; };
@@ -55,6 +62,8 @@
 			dstPath = shader;
 			dstSubfolderSpec = 7;
 			files = (
+				9112187F1774730E00F27D48 /* texture.fs in CopyFiles */,
+				911218801774730E00F27D48 /* texture.vs in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +73,8 @@
 			dstPath = shader/120;
 			dstSubfolderSpec = 7;
 			files = (
+				911218811774731400F27D48 /* texture.fs in CopyFiles */,
+				911218821774731400F27D48 /* texture.vs in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +84,8 @@
 			dstPath = mesh;
 			dstSubfolderSpec = 7;
 			files = (
+				911218831774731A00F27D48 /* sphere.obj in CopyFiles */,
+				911218841774731A00F27D48 /* sphere_.obj in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +95,16 @@
 			dstPath = texture;
 			dstSubfolderSpec = 7;
 			files = (
+				911218851774732500F27D48 /* earth.jpg in CopyFiles */,
+				911218861774732500F27D48 /* jupiter.jpg in CopyFiles */,
+				911218871774732500F27D48 /* mars.jpg in CopyFiles */,
+				911218881774732500F27D48 /* mercury.jpg in CopyFiles */,
+				911218891774732500F27D48 /* neptune.jpg in CopyFiles */,
+				9112188A1774732500F27D48 /* pluto.jpg in CopyFiles */,
+				9112188B1774732500F27D48 /* saturn.jpg in CopyFiles */,
+				9112188C1774732500F27D48 /* sun.jpg in CopyFiles */,
+				9112188D1774732500F27D48 /* uranus.jpg in CopyFiles */,
+				9112188E1774732500F27D48 /* venus.jpg in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,12 +203,6 @@
 				9189DBD51744BE3500897E56 /* CoreFoundation.framework in Frameworks */,
 				9189DB781744B64300897E56 /* GLUT.framework in Frameworks */,
 				9189DB761744B63D00897E56 /* OpenGL.framework in Frameworks */,
-				911218701774715800F27D48 /* libSOIL.a in Frameworks */,
-				911218711774715800F27D48 /* SOIL.lib in Frameworks */,
-				911218721774715800F27D48 /* image_DXT.o in Frameworks */,
-				911218731774715800F27D48 /* image_helper.o in Frameworks */,
-				911218741774715800F27D48 /* SOIL.o in Frameworks */,
-				911218751774715800F27D48 /* stb_image_aug.o in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,11 +532,8 @@
 				9112186D1774715800F27D48 /* texture.vs in Sources */,
 				9112186E1774715800F27D48 /* texture.fs in Sources */,
 				9112186F1774715800F27D48 /* texture.vs in Sources */,
-				911218761774715800F27D48 /* makefile in Sources */,
 				911218771774715800F27D48 /* image_DXT.c in Sources */,
 				911218781774715800F27D48 /* image_helper.c in Sources */,
-				911218791774715800F27D48 /* stb_image-1.09.c in Sources */,
-				9112187A1774715800F27D48 /* stb_image-1.16.c in Sources */,
 				9112187B1774715800F27D48 /* SOIL.c in Sources */,
 				9112187C1774715800F27D48 /* stb_image_aug.c in Sources */,
 			);
