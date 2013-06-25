@@ -44,6 +44,7 @@ void main() {
     }
     else
     {
+      //gl_FragColor = texColor;
       gl_FragColor = (vec4( ambAndDiff, 1.0 ) * texColor) + vec4(spec,1.0);
     }
 }

@@ -36,7 +36,7 @@ mat4 Planet::Update(float angle)
 {
   model = mat4(1.0f);
 	model *= glm::rotate(model, angle*100*radius,0.0f,1.0f,0.0f);
-	model *=  glm::translate(distance, 0.0f, 0.0f);
+	model *= glm::translate(distance, 0.0f, 0.0f);
 	model *= glm::scale(radius, radius, radius);
   return model;
 }

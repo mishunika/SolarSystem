@@ -22,6 +22,7 @@
 using glm::mat4;
 using glm::vec3;
 using namespace std;
+float velocity;
 
 
 /* ----------------------------------------------------------------------------------------------------------------------*/
@@ -38,6 +39,7 @@ cTimer fpsTimer, translationTimer;
 int fpsCount=0;
 cTexture planetTexture[5];
 Planet *Planets[10];
+static vec3 g_camTarget(0.0f, 0.4f, 0.0f);
 
 void init(void)
 {
@@ -88,15 +90,18 @@ void init(void)
     exit(1);
   }
   
+  velocity = 1;
+  
   prog.use();
   
 	glEnable(GL_DEPTH_TEST);
   glEnable(GL_CULL_FACE);
-  glFrontFace(GL_CW);
+
+  glFrontFace(GL_CCW);
   glCullFace(GL_BACK);
   sphere = new VBOMesh("mesh/sphere.obj");
 	
-  view = glm::lookAt(vec3(-1.5f,0.25f,2.0f), vec3(0.0f,0.0f,0.0f), vec3(0.0f,1.0f,0.0f));
+  view = glm::lookAt(vec3(1.5f,0.25f,2.0f), g_camTarget, vec3(0.0f,1.0f,0.0f));
   projection = mat4(1.0f);
   angle = (float)( TO_RADIANS(100.0) );
   
@@ -106,17 +111,17 @@ void init(void)
 
   // Initialize the planets.
   Planets[0] = new Planet(0.8f, 0.0f, "texture/sun.jpg");
-  Planets[1] = new Planet(0.035f, 0.86f, "texture/mercury.jpg");
+  Planets[1] = new Planet(0.03f, 0.86f, "texture/mercury.jpg");
   Planets[2] = new Planet(0.08f, 0.89f, "texture/venus.jpg");
-  Planets[3] = new Planet(0.092f, 0.90f, "texture/earth.jpg");
+  Planets[3] = new Planet(0.09f, 0.90f, "texture/earth.jpg");
   
-  Planets[4] = new Planet(0.049f, 0.95f, "texture/mars.jpg");
-  Planets[5] = new Planet(0.3f, 1.3f, "texture/jupiter.jpg");
-  Planets[6] = new Planet(0.25f, 1.6f, "texture/saturn.jpg");
+  Planets[4] = new Planet(0.04f, 0.95f, "texture/mars.jpg");
+  Planets[5] = new Planet(0.28f, 1.3f, "texture/jupiter.jpg");
+  Planets[6] = new Planet(0.22f, 1.6f, "texture/saturn.jpg");
   
-  Planets[7] = new Planet(0.14f, 1.9f, "texture/uranus.jpg");
-  Planets[8] = new Planet(0.13f, 2.1f, "texture/neptune.jpg");
-  Planets[9] = new Planet(0.018f, 2.3f, "texture/pluto.jpg");
+  Planets[7] = new Planet(0.12f, 1.9f, "texture/uranus.jpg");
+  Planets[8] = new Planet(0.1f, 2.1f, "texture/neptune.jpg");
+  Planets[9] = new Planet(0.015f, 2.3f, "texture/pluto.jpg");
   
   glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
@@ -129,7 +134,7 @@ void init(void)
 void update(int)
 {
   translationTimer.AdvanceTime();
-  angle -= translationTimer.GetElapsedTime() * 2;
+  angle -= translationTimer.GetElapsedTime() * velocity;
   translationTimer.Reset();
   
   glutTimerFunc(1,update,0);
@@ -138,6 +143,7 @@ void update(int)
 
 void setMatrices()
 {
+  view = glm::lookAt(vec3(0.0f, 0.0f, 3.0f), g_camTarget, vec3(0.0f, 1.0f, 0.0f));
   mat4 mv = view * model;
   prog.setUniform("ModelViewMatrix", mv);
   prog.setUniform("NormalMatrix",
@@ -163,9 +169,9 @@ void render(void)
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
   
   //prog.setUniform("Light.Position", view * vec4(20.0f * cos(angle),1.0f,20.0f * sin(angle),1.0f) );
-  prog.setUniform("Light.Position", view * vec4(0.0f, 0.0f, 0.0f, 5.0f) );
+  prog.setUniform("Light.Position", view * vec4(0.0f, 0.0f, 0.0f, 1.0f) );
   prog.setUniform("Material.Ks", 0.05f, 0.05f, 0.05f);        // Specular
-	prog.setUniform("Material.Kd", 0.9f, 0.9f, 0.9f);           // Ambient
+	prog.setUniform("Material.Kd", 0.95f, 0.95f, 0.95f);           // Ambient
   prog.setUniform("Material.Ka", 0.05f, 0.05f, 0.05f);        // Diffuse
   prog.setUniform("Material.Shininess", 1.0f);
   
@@ -182,53 +188,6 @@ void render(void)
     setMatrices();
     Planets[i]->Render();
   }
-
-  /*
-	//render sun in center
-  prog.setUniform("Sun", true);
-  //model = mat4(1.0f);
-	//model*= glm::rotate(model, angle*5,0.0f,1.0f,0.0f);
-	//model*= glm::scale(0.6f,0.6f,0.6f);
-  model = Planets[0]->Update(angle);
-  setMatrices();
-	Planets[0]->Render();
-  prog.setUniform("Sun", false);
-  
-	//render mercury around earth
-  model = mat4(1.0f);
-	model *=  glm::rotate(angle*20,0.0f,1.0f,0.0f);
-	model *=  glm::translate(0.86f, 0.0f, 0.0f);
-	model *=  glm::scale(0.035f, 0.035f, 0.035f);
-  setMatrices();
-	glBindTexture(GL_TEXTURE_2D, planetTexture[1].GetTextureHandle());
-  sphere->render();
-  
-	//render venus around earth
-  model = mat4(1.0f);
-	model*=  glm::rotate(angle*30,0.0f,1.0f,0.0f);
-	model*=  glm::translate(1.2f, 0.0f, 0.0f);
-	model*=  glm::scale(0.1f, 0.1f, 0.1f);
-  setMatrices();
-	glBindTexture(GL_TEXTURE_2D, planetTexture[2].GetTextureHandle());
-  sphere->render();
-  
-	//render earth around sun
-  model = mat4(1.0f);
-	model*=  glm::rotate(angle*40,0.0f,1.0f,0.0f);
-	model*=  glm::translate(1.4f, 0.0f, 0.0f);
-	model*=  glm::scale(0.12f, 0.12f, 0.12f);
-  setMatrices();
-	glBindTexture(GL_TEXTURE_2D, planetTexture[3].GetTextureHandle());
-  sphere->render();
-  
-	//render mars around sun
-  model = mat4(1.0f);
-	model*=  glm::rotate(angle*50,0.0f,1.0f,0.0f);
-	model*=  glm::translate(1.9f, 0.0f, 0.0f);
-	model*=  glm::scale(0.14f, 0.14f, 0.14f);
-  setMatrices();
-	glBindTexture(GL_TEXTURE_2D, planetTexture[4].GetTextureHandle());
-  sphere->render();*/
   
 	glutSwapBuffers();
 }
@@ -237,15 +196,21 @@ void reshape(int w, int h)
 {
   glViewport(0,0,w,h);
   //float c = 2.0f;
-  projection = glm::perspective(100.0f,(float)w/(float)h,0.1f,100.0f);
+  projection = glm::perspective(100.0f,(float)w/(float)h,0.3f,100.0f);
 }
 void keyboard (unsigned char key, int x, int y)
 {
   //cout << key << " " << x << " " << y;
   switch (key) {
-    case 'w':
-      cout << "ae";
-      break;
+    case 'w': g_camTarget.z -= 0.4f; break;
+    case 's': g_camTarget.z += 0.4f; break;
+    case 'd': g_camTarget.x += 0.4f; break;
+    case 'a': g_camTarget.x -= 0.4f; break;
+    case 'e': g_camTarget.y -= 0.4f; break;
+    case 'q': g_camTarget.y += 0.4f; break;
+      
+    case 'm': velocity += 0.5f; break;
+    case 'n': velocity -= 0.5f; break;
       
     default:
       break;
@@ -298,7 +263,7 @@ int main(int argc, char* argv[])
 	//GLUT INIT
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA | GLUT_DEPTH);
-	glutInitWindowSize(1280,755);
+	glutInitWindowSize(800,600);
 	glutCreateWindow("Planets");
 	glutDisplayFunc(render);
 	glutReshapeFunc(reshape);

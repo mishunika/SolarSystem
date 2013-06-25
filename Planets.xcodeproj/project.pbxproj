@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9112187E177472B100F27D48 /* cTimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 91635D35175683F00024AEEC /* cTimer.cpp */; };
 		9138759C17455406008AE8BB /* sun.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9138759B174553F1008AE8BB /* sun.jpg */; };
 		9138759E174555D6008AE8BB /* venus.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9138759D174555D1008AE8BB /* venus.jpg */; };
 		913875A01745F8A0008AE8BB /* sphere_.obj in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9138759F1745F895008AE8BB /* sphere_.obj */; };
-		91635D38175683F00024AEEC /* cTimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 91635D35175683F00024AEEC /* cTimer.cpp */; };
 		91635D3A1756941B0024AEEC /* mars.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 91635D39175694150024AEEC /* mars.jpg */; };
 		9183FAA21764D48E007E2DCA /* Planet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9183FAA01764D48E007E2DCA /* Planet.cpp */; };
 		9183FAA81764F755007E2DCA /* jupiter.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9183FAA31764F74A007E2DCA /* jupiter.jpg */; };
@@ -27,7 +27,6 @@
 		9189DB741744B59600897E56 /* cTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9189DB721744B59600897E56 /* cTexture.cpp */; };
 		9189DB761744B63D00897E56 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9189DB751744B63D00897E56 /* OpenGL.framework */; };
 		9189DB781744B64300897E56 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9189DB771744B64300897E56 /* GLUT.framework */; };
-		9189DBCA1744BC8700897E56 /* makefile in Sources */ = {isa = PBXBuildFile; fileRef = 9189DBA31744BC8700897E56 /* makefile */; };
 		9189DBCB1744BC8700897E56 /* image_DXT.c in Sources */ = {isa = PBXBuildFile; fileRef = 9189DBB51744BC8700897E56 /* image_DXT.c */; };
 		9189DBCC1744BC8700897E56 /* image_helper.c in Sources */ = {isa = PBXBuildFile; fileRef = 9189DBB71744BC8700897E56 /* image_helper.c */; };
 		9189DBCF1744BC8700897E56 /* SOIL.c in Sources */ = {isa = PBXBuildFile; fileRef = 9189DBBC1744BC8700897E56 /* SOIL.c */; };
@@ -510,14 +509,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9189DBE01744C47F00897E56 /* stb_image_aug.c in Sources */,
 				9189DB5D1744B52100897E56 /* main.cpp in Sources */,
 				9189DB6E1744B55300897E56 /* drawable.cpp in Sources */,
 				9189DB6F1744B55300897E56 /* glslprogram.cpp in Sources */,
 				9189DB701744B55300897E56 /* glutils.cpp in Sources */,
 				9189DB711744B55300897E56 /* vbomesh.cpp in Sources */,
 				9189DB741744B59600897E56 /* cTexture.cpp in Sources */,
-				9189DBCA1744BC8700897E56 /* makefile in Sources */,
+				9183FAA21764D48E007E2DCA /* Planet.cpp in Sources */,
+				9112187E177472B100F27D48 /* cTimer.cpp in Sources */,
+				9189DBE01744C47F00897E56 /* stb_image_aug.c in Sources */,
 				9189DBCB1744BC8700897E56 /* image_DXT.c in Sources */,
 				9189DBCC1744BC8700897E56 /* image_helper.c in Sources */,
 				9189DBCF1744BC8700897E56 /* SOIL.c in Sources */,
@@ -525,8 +525,6 @@
 				9189DBE91744C55400897E56 /* texture.vs in Sources */,
 				9189DBEA1744C55400897E56 /* texture.fs in Sources */,
 				9189DBEB1744C55400897E56 /* texture.vs in Sources */,
-				91635D38175683F00024AEEC /* cTimer.cpp in Sources */,
-				9183FAA21764D48E007E2DCA /* Planet.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
