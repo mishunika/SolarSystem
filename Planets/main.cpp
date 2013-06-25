@@ -170,10 +170,10 @@ void render(void)
   
   //prog.setUniform("Light.Position", view * vec4(20.0f * cos(angle),1.0f,20.0f * sin(angle),1.0f) );
   prog.setUniform("Light.Position", view * vec4(0.0f, 0.0f, 0.0f, 1.0f) );
-  prog.setUniform("Material.Ks", 0.05f, 0.05f, 0.05f);        // Specular
-	prog.setUniform("Material.Kd", 0.95f, 0.95f, 0.95f);           // Ambient
-  prog.setUniform("Material.Ka", 0.05f, 0.05f, 0.05f);        // Diffuse
-  prog.setUniform("Material.Shininess", 1.0f);
+  prog.setUniform("Material.Ks", 0.15f, 0.15f, 0.15f);     // Specular
+	prog.setUniform("Material.Kd", 0.9f, 0.9f, 0.9f);        // Diffuse
+  prog.setUniform("Material.Ka", 0.3f, 0.3f, 0.3f);        // Ambient
+  prog.setUniform("Material.Shininess", 0.8f);
   
   //render sun in center
   prog.setUniform("Sun", true);
